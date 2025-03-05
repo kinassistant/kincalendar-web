@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -7,7 +6,7 @@ export default function Home() {
       <main className="flex-1 flex flex-col items-center justify-center p-8">
         <div className="max-w-4xl w-full text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">Welcome to Our App</h1>
-          <p className="text-xl mb-8">Your app's description goes here. Explain the main features and benefits.</p>
+          <p className="text-xl mb-8">Your app&apos;s description goes here. Explain the main features and benefits.</p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <button className="bg-black text-white dark:bg-white dark:text-black font-semibold py-3 px-8 rounded-lg hover:opacity-90 transition-opacity">

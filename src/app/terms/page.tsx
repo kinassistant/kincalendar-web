@@ -23,7 +23,7 @@ export default function TermsOfService() {
           
           <h2 className="text-xl font-semibold mt-8 mb-4">2. Use of Services</h2>
           <p>
-            Our services are provided "as is" and "as available." We make no warranties, 
+            Our services are provided &quot;as is&quot; and &quot;as available.&quot; We make no warranties, 
             expressed or implied, and hereby disclaim all warranties, including without limitation, 
             implied warranties of merchantability and fitness for a particular purpose.
           </p>
