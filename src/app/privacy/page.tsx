@@ -152,8 +152,7 @@ export default function PrivacyPolicy() {
             If you have questions or concerns about this Privacy Policy, please reach out:
           </p>
           <ul className="list-disc ml-8 mb-4">
-            <li><strong>Email</strong>: (Insert contact email)</li>
-            <li><strong>Mail</strong>: (Insert physical address if applicable)</li>
+            <li><strong>Email</strong>: owner@fungee.llc</li>
           </ul>
           
           <hr className="my-8" />

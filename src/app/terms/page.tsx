@@ -23,10 +23,6 @@ export default function TermsOfService() {
             By using KIN, you agree to these Terms. If you do not agree, you must not use the Service.
           </p>
           
-          <blockquote className="border-l-4 border-gray-300 pl-4 italic my-6">
-            <p><strong>Note:</strong> This document is for informational purposes only and is not legal advice.</p>
-          </blockquote>
-          
           <hr className="my-8" />
           
           <h2 className="text-xl font-semibold mt-8 mb-4">1. Acceptance of Terms</h2>
