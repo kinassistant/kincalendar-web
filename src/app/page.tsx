@@ -24,7 +24,7 @@ export default function Home() {
               The Future of Family Scheduling
             </h1>
             <p className="text-lg text-gray-600 italic max-w-md mx-auto">
-              "Finally! A family calendar app that actually helps rather than just creates more stress."
+              &ldquo;Finally! A family calendar app that actually helps rather than just creates more stress.&rdquo;
             </p>
           </div>
 
@@ -40,10 +40,12 @@ export default function Home() {
 
           <div className="mb-16 flex justify-center">
             <div className="max-w-[300px] mx-auto">
-              <img 
+              <Image 
                 src="/app-screenshot.png" 
                 alt="KIN App Screenshot" 
                 className="rounded-3xl shadow-lg w-full h-auto"
+                width={300}
+                height={600}
               />
             </div>
           </div>
@@ -115,7 +117,7 @@ export default function Home() {
             <h2 className="text-xl font-semibold mb-6 text-center">The Story Behind KIN</h2>
             <div className="bg-gray-50 p-6 rounded-lg">
               <p className="text-gray-600 mb-3 text-sm">
-                KIN was created by parents who were tired of complex family scheduling apps. We built what we wanted ourselves: a simple, fast way to keep track of everyone's schedules.
+                KIN was created by parents who were tired of complex family scheduling apps. We built what we wanted ourselves: a simple, fast way to keep track of everyone&apos;s schedules.
               </p>
               <p className="text-center text-xs text-gray-500">KIN Founders</p>
             </div>
