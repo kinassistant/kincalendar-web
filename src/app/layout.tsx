@@ -13,11 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "App Name | Your App Tagline",
-  description: "A brief description of your app and what it offers to users.",
-  keywords: ["app", "service", "solution", "web application"],
-  authors: [{ name: "Your Name" }],
-  creator: "Your Company Name",
+  title: "KIN | The Future of Family Scheduling",
+  description: "KIN is a modern family calendar app designed to simplify scheduling and coordination between family members.",
+  keywords: ["family calendar", "scheduling app", "family organization", "event planning", "KIN app"],
+  authors: [{ name: "KIN Team" }],
+  creator: "KIN Calendar",
 };
 
 export default function RootLayout({

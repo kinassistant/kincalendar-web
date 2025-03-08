@@ -96,3 +96,24 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Image Assets
+
+To complete the KIN landing page, please add the following image assets:
+
+### App Screenshot
+1. Prepare a screenshot of your app (recommended size: 400x700px)
+2. Save it as `app-screenshot.png` in the `public` folder
+3. Open `src/app/page.tsx` and replace the placeholder image element with:
+   ```jsx
+   <img 
+     src="/app-screenshot.png" 
+     alt="KIN App Screenshot" 
+     className="rounded-xl shadow-lg w-full h-auto"
+   />
+   ```
+
+### Founder Team Image
+1. Prepare an image of your team (recommended size: 600x400px)
+2. Save it as `founder-team.jpg` in the `public` folder
+3. No code changes required - it will automatically use your image
