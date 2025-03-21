@@ -1,26 +1,79 @@
-@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Figtree", sans-serif;
+    background-color: white;
+    font-size: 16px;
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+    color: #020617;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.container_fluid {
+  @apply max-w-full px-4 md:px-8 2xl:px-[128px];
+}
+.selected-shadow {
+  box-shadow: 0px 0px 0px 3px #ffbdc7;
+}
+
+.section-title {
+  @apply text-2xl md:text-[32px] md:leading-[40px] font-semibold;
+}
+.section-sub-title {
+  @apply text-lg font-medium text-neutral_800 sm:text-center;
+}
+
+.terms-title {
+  @apply text-xl font-semibold;
+}
+.terms-paragraph {
+  @apply text-base font-medium text-neutral_900;
+}
+
+.icon-box-shadow {
+  box-shadow: 0px 0px 0px 2px #ffce8f;
+}
+
+.circle-one-shadow {
+  box-shadow: 0px 3.66px 7.33px 0px #e6510099;
+}
+.circle-third-shadow {
+  box-shadow: 0px 1.83px 3.66px 0px #ff921214;
+}
+.circle-shadow-sm-one {
+  box-shadow: 0px 2.33px 4.66px 0px #e6510099;
+}
+
+.circle-third-sm-shadow {
+  box-shadow: 0px 1.17px 2.33px 0px #ff921214;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #dfe2e5;
+  border-radius: 50%;
+}
+.active-dot {
+  width: 24px;
+  height: 8px;
+  background: #ff9212;
+  border-radius: 4px;
 }
