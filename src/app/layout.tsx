@@ -1,36 +1,65 @@
+import Footer from "@/components/shared/Footer";
+import Navbar from "@/components/shared/Navbar";
+import NavbarSm from "@/components/shared/NavbarSm";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import Head from "next/head";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "KIN | The Future of Family Scheduling",
-  description: "KIN is a modern family calendar app designed to simplify scheduling and coordination between family members.",
-  keywords: ["family calendar", "scheduling app", "family organization", "event planning", "KIN app"],
-  authors: [{ name: "KIN Team" }],
-  creator: "KIN Calendar",
+  title: "Kin Landing",
+  description: "Smart planning for busy families, powered by voice.",
+  openGraph: {
+    title: "Kin Landing",
+    description: "Smart planning for busy families, powered by voice.",
+    images: ["https://yourwebsite.com/preview-image.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kin Landing - Smart Planning for Busy Families",
+    description: "Smart planning for busy families, powered by voice.",
+    images: ["https://yourwebsite.com/preview-image.jpg"],
+    site: "@yourTwitterHandle",
+    creator: "@yourTwitterHandle",
+  },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <Head>
+        {/*  Apple App Store Meta Tag */}
+        <meta name="apple-itunes-app" content="app-id=6714457940" />
+        {/* Twitter (X) Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Kin Landing - Smart Planning for Busy Families"
+        />
+        <meta
+          name="twitter:description"
+          content="Smart planning for busy families, powered by voice."
+        />
+        <meta
+          name="twitter:image"
+          content="https://yourwebsite.com/preview-image.jpg"
+        />{" "}
+        <meta name="twitter:site" content="@yourTwitterHandle" />{" "}
+        <meta name="twitter:creator" content="@yourTwitterHandle" />{" "}
+      </Head>
+      <body className="relative">
+        <div className="fixed top-6 left-0 right-0 z-50">
+          <Navbar />
+        </div>
+
+        <div>
+          <NavbarSm />
+        </div>
+
         {children}
+
+        <Footer />
       </body>
     </html>
   );
