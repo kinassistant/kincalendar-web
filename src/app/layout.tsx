@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import logo from "@/assets/logo.svg";
 import "./globals.css";
 
-const title = "Kin: Family Calendar & Planner";
+const title = "Kin: Family Calendar";
 const description = "Voice-first AI powered Family Calendar.";
 
 export const metadata: Metadata = {
