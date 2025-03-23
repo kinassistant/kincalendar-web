@@ -3,6 +3,7 @@ import Navbar from "@/components/shared/Navbar";
 import NavbarSm from "@/components/shared/NavbarSm";
 import type { Metadata } from "next";
 import logo from "@/assets/logo.svg";
+import { Analytics } from '@vercel/analytics/react';
 import "./globals.css";
 
 const title = "Kin: Family Calendar";
@@ -47,6 +48,7 @@ export default function RootLayout({
         {children}
 
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
