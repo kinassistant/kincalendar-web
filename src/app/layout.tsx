@@ -6,14 +6,30 @@ import logo from "@/assets/logo.svg";
 import { Analytics } from '@vercel/analytics/react';
 import "./globals.css";
 
-const title = "KIN: Family Calendar";
-const description = "Voice-first AI powered Family Calendar.";
+const title = "KIN: Family Calendar - AI-Powered Family Scheduling App";
+const description = "Streamline your family's schedule with KIN, the voice-first AI-powered family calendar app. Perfect for busy families, featuring smart scheduling, reminders, and seamless coordination.";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://kincalendar.com'),
   title,
   description,
-  keywords: ['family calendar', 'AI calendar', 'voice calendar', 'family scheduling', 'family organization', 'iOS app'],
+  keywords: [
+    'family calendar app',
+    'AI calendar',
+    'voice calendar',
+    'family scheduling',
+    'family organization',
+    'iOS app',
+    'family planner',
+    'smart calendar',
+    'family coordination',
+    'voice assistant calendar',
+    'family time management',
+    'family schedule app',
+    'family calendar for iOS',
+    'AI family planner',
+    'family calendar with voice'
+  ],
   authors: [{ name: 'Sanket Patel' }],
   creator: 'Sanket Patel',
   publisher: 'KIN: Family Calendar',
@@ -29,6 +45,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     siteName: 'KIN: Family Calendar',
+    url: 'https://kincalendar.com',
   },
   twitter: {
     card: "summary_large_image",
