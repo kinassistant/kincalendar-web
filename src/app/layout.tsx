@@ -4,6 +4,7 @@ import NavbarSm from "@/components/shared/NavbarSm";
 import type { Metadata } from "next";
 import logo from "@/assets/logo.svg";
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import "./globals.css";
 
 const title = "KIN: Family Calendar - AI-Powered Family Scheduling App";
@@ -95,6 +96,7 @@ export default function RootLayout({
 
         <Footer />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
