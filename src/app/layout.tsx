@@ -97,12 +97,16 @@ export default function RootLayout({
           href="/assets/banner-mobile.webp"
           as="image"
           type="image/webp"
+          fetchPriority="high"
+          media="(max-width: 1024px)"
         />
         <link
           rel="preload"
           href="/assets/hero-banner.png"
           as="image"
           type="image/png"
+          fetchPriority="high"
+          media="(min-width: 1025px)"
         />
       </head>
       <body className={`${figtree.variable} relative`}>
