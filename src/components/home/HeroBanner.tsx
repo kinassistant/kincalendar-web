@@ -16,7 +16,15 @@ const HeroBanner: React.FC = () => {
             </div>
           </div>
           <div className="absolute top-[50px] left-[-40px] xl:left-[-40px] z-30">
-            <Image src={heroBanner} alt="heroBanner" />
+            <Image
+              src={heroBanner}
+              alt="heroBanner"
+              priority
+              quality={75}
+              loading="eager"
+              fetchPriority="high"
+              sizes="(min-width: 1024px) 100vw, 0px"
+            />
           </div>
         </div>
       </div>
@@ -34,16 +42,23 @@ const HeroBanner: React.FC = () => {
             width={230}
             height={469}
             priority
-            quality={85}
+            quality={75}
+            loading="eager"
+            fetchPriority="high"
             className="min-w-[230px] h-full"
             placeholder="blur"
+            sizes="(max-width: 1024px) 230px, 0px"
           />
         </div>
         <div className="absolute top-[30px] left-1/2 -translate-x-1/2">
           <Image
             src={mobileCard4x}
             alt="bannerCard"
+            width={320}
+            height={320}
+            quality={75}
             className="min-w-[320px] h-full"
+            sizes="(max-width: 1024px) 320px, 0px"
           />
         </div>
       </div>

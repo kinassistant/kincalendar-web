@@ -91,6 +91,20 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="preload"
+          href="/assets/banner-mobile.webp"
+          as="image"
+          type="image/webp"
+        />
+        <link
+          rel="preload"
+          href="/assets/hero-banner.png"
+          as="image"
+          type="image/png"
+        />
+      </head>
       <body className={`${figtree.variable} relative`}>
         <div className="fixed top-6 left-0 right-0 z-50">
           <Navbar />
