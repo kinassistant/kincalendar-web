@@ -20,7 +20,7 @@ const HeroBanner: React.FC = () => {
               src={heroBanner}
               alt="heroBanner"
               priority
-              quality={75}
+              quality={85}
               loading="eager"
               fetchPriority="high"
               sizes="(min-width: 1024px) 100vw, 0px"
@@ -31,11 +31,11 @@ const HeroBanner: React.FC = () => {
       <div className="mt-[30px] w-full h-[780px] lg:hidden flex justify-center items-center relative">
         <div className="relative flex justify-center items-center h-[800px]">
           <div className="absolute w-[487px] h-[487px] rounded-full bg-[#FFDCB0]/[30%] animate-zoom circle-third-sm-shadow opacity-80"></div>
-          <div className="absolute  w-[379px] h-[379px] rounded-full bg-[#FFA131] animate-zoom circle-shadow-sm-one opacity-10"></div>
-          <div className="absolute  w-[286px] h-[286px] circle-shadow-sm-one  rounded-full bg-gradient-to-t to-[#FF8500] from-[#FFA131] opacity-10 animate-zoom"></div>
+          <div className="absolute w-[379px] h-[379px] rounded-full bg-[#FFA131] animate-zoom circle-shadow-sm-one opacity-10"></div>
+          <div className="absolute w-[286px] h-[286px] circle-shadow-sm-one rounded-full bg-gradient-to-t to-[#FF8500] from-[#FFA131] opacity-10 animate-zoom"></div>
         </div>
 
-        <div className="absolute top-[160px] left-1/2 -translate-x-1/2">
+        <div className="absolute top-[160px] left-1/2 -translate-x-1/2 w-[230px] h-[469px]">
           <Image
             src={BannerMobile}
             alt="BannerMobile"
@@ -47,18 +47,28 @@ const HeroBanner: React.FC = () => {
             fetchPriority="high"
             className="min-w-[230px] h-full"
             placeholder="blur"
-            sizes="(max-width: 1024px) 230px, 0px"
+            sizes="230px"
+            style={{
+              objectFit: "contain",
+              transform: "translate3d(0, 0, 0)",
+              willChange: "transform",
+            }}
           />
         </div>
-        <div className="absolute top-[30px] left-1/2 -translate-x-1/2">
+        <div className="absolute top-[30px] left-1/2 -translate-x-1/2 w-[320px] h-[320px]">
           <Image
             src={mobileCard4x}
             alt="bannerCard"
             width={320}
             height={320}
-            quality={75}
+            quality={85}
             className="min-w-[320px] h-full"
-            sizes="(max-width: 1024px) 320px, 0px"
+            sizes="320px"
+            style={{
+              objectFit: "contain",
+              transform: "translate3d(0, 0, 0)",
+              willChange: "transform",
+            }}
           />
         </div>
       </div>
