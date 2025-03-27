@@ -1,5 +1,5 @@
 import Image from "next/image";
-import BannerMobile from "../../assets/banner-mobile.png";
+import BannerMobile from "../../assets/banner-mobile.webp";
 import heroBanner from "../../assets/hero-banner.png";
 import mobileCard4x from "../../assets/mobile-card-4x.webp";
 
@@ -31,7 +31,12 @@ const HeroBanner: React.FC = () => {
           <Image
             src={BannerMobile}
             alt="BannerMobile"
+            width={230}
+            height={469}
+            priority
+            quality={85}
             className="min-w-[230px] h-full"
+            placeholder="blur"
           />
         </div>
         <div className="absolute top-[30px] left-1/2 -translate-x-1/2">
