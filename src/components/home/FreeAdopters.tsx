@@ -13,10 +13,10 @@ const FreeAdopters: React.FC = () => {
         <div className="m-[3px] bg-gradient-to-t to-[#FF8500] via-[#F66A00] from-[#F66A00] rounded-2xl py-12 px-4">
           <div className="flex flex-col items-center justify-center">
             <h4 className="text-white text-[32px] leading-10 font-semibold max-w-[418px] mx-auto text-center">
-              Ready to Simplify Your Family's Schedule?
+              Ready to Simplify Your Family&apos;s Schedule?
             </h4>
             <p className="text-white text-lg font-medium leading-6 mt-4 max-w-[430px] mx-auto text-center">
-              Don't miss your chance to join the family revolution in
+              Don&apos;t miss your chance to join the family revolution in
               scheduling.
             </p>
             <Link
