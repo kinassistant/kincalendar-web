@@ -5,7 +5,7 @@ import clint3 from "../assets/clint3.png";
 export const testimonials = [
   {
     id: 1,
-    text: "“KIN completely changed how we manage our family schedule. I just say what we need, and it's on the calendar. No more missed soccer games or double bookings.”",
+    text: "KIN completely changed how we manage our family schedule. I just say what we need, and it's on the calendar. No more missed soccer games or double bookings.",
     name: "Sarah",
     role: "Busy Mom of Three",
     image: clint1,
