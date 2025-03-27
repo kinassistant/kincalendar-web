@@ -55,6 +55,8 @@ const HeroHeading: React.FC = () => {
             "https://apps.apple.com/us/app/kin-family-calendar/id6714457940"
           }
           className="mt-6 h-16 px-4 py-2 bg-neutral_1000 hover:bg-neutral_900 border border-neutral_700 rounded-xl flex items-center gap-2"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <Image src={apple} alt="apple" />
           <div>

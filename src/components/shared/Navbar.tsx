@@ -43,6 +43,8 @@ const Navbar: React.FC = () => {
           <Link
             href="https://apps.apple.com/us/app/kin-family-calendar/id6714457940"
             className="h-7 px-2 flex items-center justify-center rounded-lg bg-neutral_1000 text-white text-sm font-semibold hover:bg-neutral_900 duration-300"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Download on iOS
           </Link>
