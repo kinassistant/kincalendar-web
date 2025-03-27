@@ -1,15 +1,29 @@
 "use client";
-import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import { LuMinus, LuPlus } from "react-icons/lu";
 import { faqs } from "../../data/faq-data";
 import FreeAdopters from "./FreeAdopters";
+
+const DynamicMotionDiv = dynamic(
+  () => import("framer-motion").then((mod) => mod.motion.div),
+  {
+    ssr: false,
+  },
+);
 
 const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const animationConfig = {
+    initial: { opacity: 0, maxHeight: 0 },
+    animate: { opacity: 1, maxHeight: 150 },
+    exit: { opacity: 0, maxHeight: 0 },
+    transition: { duration: 0.6, ease: "easeInOut" },
   };
 
   return (
@@ -39,21 +53,16 @@ const FAQSection = () => {
                   )}
                 </span>
               </button>
-              <AnimatePresence>
-                {openIndex === index && (
-                  <motion.div
-                    initial={{ opacity: 0, maxHeight: 0 }}
-                    animate={{ opacity: 1, maxHeight: 150 }}
-                    exit={{ opacity: 0, maxHeight: 0 }}
-                    transition={{ duration: 0.6, ease: "easeInOut" }}
-                    className="overflow-hidden max-w-[656px]"
-                  >
-                    <p className="pb-4 text-[#606673] font-medium text-lg text-[16px] leading-6">
-                      {faq.answer}
-                    </p>
-                  </motion.div>
-                )}
-              </AnimatePresence>
+              {openIndex === index && (
+                <DynamicMotionDiv
+                  {...animationConfig}
+                  className="overflow-hidden max-w-[656px]"
+                >
+                  <p className="pb-4 text-[#606673] font-medium text-lg text-[16px] leading-6">
+                    {faq.answer}
+                  </p>
+                </DynamicMotionDiv>
+              )}
             </div>
           ))}
         </div>

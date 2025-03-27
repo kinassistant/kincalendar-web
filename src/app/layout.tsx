@@ -3,37 +3,37 @@ import Navbar from "@/components/shared/Navbar";
 import NavbarSm from "@/components/shared/NavbarSm";
 import type { Metadata } from "next";
 import logo from "@/assets/logo.svg";
-import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 import "./globals.css";
+import ClientAnalytics from "@/components/shared/ClientAnalytics";
 
 const title = "KIN: Family Calendar - AI-Powered Family Scheduling App";
-const description = "Streamline your family's schedule with KIN, the voice-first AI-powered family calendar app. Perfect for busy families, featuring smart scheduling, reminders, and seamless coordination.";
+const description =
+  "Streamline your family's schedule with KIN, the voice-first AI-powered family calendar app. Perfect for busy families, featuring smart scheduling, reminders, and seamless coordination.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://kincalendar.com'),
+  metadataBase: new URL("https://kincalendar.com"),
   title,
   description,
   keywords: [
-    'family calendar app',
-    'AI calendar',
-    'voice calendar',
-    'family scheduling',
-    'family organization',
-    'iOS app',
-    'family planner',
-    'smart calendar',
-    'family coordination',
-    'voice assistant calendar',
-    'family time management',
-    'family schedule app',
-    'family calendar for iOS',
-    'AI family planner',
-    'family calendar with voice'
+    "family calendar app",
+    "AI calendar",
+    "voice calendar",
+    "family scheduling",
+    "family organization",
+    "iOS app",
+    "family planner",
+    "smart calendar",
+    "family coordination",
+    "voice assistant calendar",
+    "family time management",
+    "family schedule app",
+    "family calendar for iOS",
+    "AI family planner",
+    "family calendar with voice",
   ],
-  authors: [{ name: 'Sanket Patel' }],
-  creator: 'Sanket Patel',
-  publisher: 'KIN: Family Calendar',
+  authors: [{ name: "Sanket Patel" }],
+  creator: "Sanket Patel",
+  publisher: "KIN: Family Calendar",
   formatDetection: {
     email: false,
     address: false,
@@ -43,10 +43,10 @@ export const metadata: Metadata = {
     title,
     description,
     images: [logo.src],
-    type: 'website',
-    locale: 'en_US',
-    siteName: 'KIN: Family Calendar',
-    url: 'https://kincalendar.com',
+    type: "website",
+    locale: "en_US",
+    siteName: "KIN: Family Calendar",
+    url: "https://kincalendar.com",
   },
   twitter: {
     card: "summary_large_image",
@@ -65,16 +65,16 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   verification: {
-    google: 'your-google-site-verification',
+    google: "your-google-site-verification",
   },
   alternates: {
-    canonical: 'https://kincalendar.com',
+    canonical: "https://kincalendar.com",
   },
 };
 
@@ -95,8 +95,7 @@ export default function RootLayout({
         {children}
 
         <Footer />
-        <Analytics />
-        <SpeedInsights />
+        <ClientAnalytics />
       </body>
     </html>
   );

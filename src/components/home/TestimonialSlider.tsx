@@ -1,14 +1,15 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import { testimonials } from "../../data/testimonials";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { testimonials } from "../../data/testimonials";
 
 const TestimonialSlider: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+
   return (
     <div>
       <Swiper
@@ -28,7 +29,7 @@ const TestimonialSlider: React.FC = () => {
             <div className="bg-[#FFFCF8] py-8 px-5 rounded-lg border border-[#FFEAD1] transition duration-300 h-full flex flex-col justify-between space-y-8">
               <div className="min-h-[100px]">
                 <p className="font-medium text-start text-lg leading-6">
-                  “{testimonial.text}”
+                  &ldquo;{testimonial.text}&rdquo;
                 </p>
               </div>
               <div className="flex items-center gap-4">
@@ -50,9 +51,7 @@ const TestimonialSlider: React.FC = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-
-      {/* Custom Pagination */}
-      <div className="flex justify-center mt-6 space-x-2">
+      <div className="custom-pagination mt-6 flex justify-center gap-2">
         {testimonials.map((_, index) => (
           <span
             key={index}

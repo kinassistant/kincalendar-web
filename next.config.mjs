@@ -22,6 +22,13 @@ const nextConfig = {
       },
     ];
   },
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
+  experimental: {
+    optimizeCss: true,
+    optimizePackageImports: ['framer-motion', '@vercel/analytics', '@vercel/speed-insights', 'swiper', 'react-icons'],
+  },
 };
 
 export default nextConfig;
