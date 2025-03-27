@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,7 +14,7 @@
   }
 
   body {
-    font-family: "Figtree", sans-serif;
+    font-family: var(--font-figtree), sans-serif;
     background-color: white;
     font-size: 16px;
     max-width: 1920px;

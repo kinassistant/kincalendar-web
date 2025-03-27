@@ -5,6 +5,14 @@ import type { Metadata } from "next";
 import logo from "@/assets/logo.svg";
 import "./globals.css";
 import ClientAnalytics from "@/components/shared/ClientAnalytics";
+import { Figtree } from "next/font/google";
+
+const figtree = Figtree({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-figtree",
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+});
 
 const title = "KIN: Family Calendar - AI-Powered Family Scheduling App";
 const description =
@@ -83,7 +91,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className="relative">
+      <body className={`${figtree.variable} relative`}>
         <div className="fixed top-6 left-0 right-0 z-50">
           <Navbar />
         </div>
