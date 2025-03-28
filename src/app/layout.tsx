@@ -2,7 +2,6 @@ import Footer from "@/components/shared/Footer";
 import Navbar from "@/components/shared/Navbar";
 import NavbarSm from "@/components/shared/NavbarSm";
 import type { Metadata } from "next";
-import logo from "@/assets/logo.svg";
 import "./globals.css";
 import ClientAnalytics from "@/components/shared/ClientAnalytics";
 import { Figtree } from "next/font/google";
@@ -50,7 +49,7 @@ export const metadata: Metadata = {
   openGraph: {
     title,
     description,
-    images: [logo.src],
+    images: ["/assets/kin-calendar-social.png"],
     type: "website",
     locale: "en_US",
     siteName: "KIN: Family Calendar",
@@ -60,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title,
     description,
-    images: [logo.src],
+    images: ["/assets/kin-calendar-social.png"],
     site: "@realsanketp",
     creator: "@realsanketp",
   },
