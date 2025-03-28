@@ -18,7 +18,7 @@ const description =
   "Streamline your family's schedule with KIN, the voice-first AI-powered family calendar app. Perfect for busy families, featuring smart scheduling, reminders, and seamless coordination.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://kincalendar.com"),
+  metadataBase: new URL("https://www.kincalendar.com"),
   title,
   description,
   keywords: [
@@ -49,17 +49,17 @@ export const metadata: Metadata = {
   openGraph: {
     title,
     description,
-    images: ["/assets/kin-calendar-social.png"],
+    images: ["https://www.kincalendar.com/assets/kin-calendar-social.png"],
     type: "website",
     locale: "en_US",
     siteName: "KIN: Family Calendar",
-    url: "https://kincalendar.com",
+    url: "https://www.kincalendar.com",
   },
   twitter: {
     card: "summary_large_image",
     title,
     description,
-    images: ["/assets/kin-calendar-social.png"],
+    images: ["https://www.kincalendar.com/assets/kin-calendar-social.png"],
     site: "@realsanketp",
     creator: "@realsanketp",
   },
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     google: "your-google-site-verification",
   },
   alternates: {
-    canonical: "https://kincalendar.com",
+    canonical: "https://www.kincalendar.com",
   },
 };
 
