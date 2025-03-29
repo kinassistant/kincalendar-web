@@ -23,7 +23,7 @@ const HeroBanner: React.FC = () => {
               quality={85}
               loading="eager"
               fetchPriority="high"
-              sizes="(min-width: 1024px) 100vw, 0px"
+              sizes="(min-width: 1300px) 1187px, (min-width: 1024px) 90vw, 0px"
             />
           </div>
         </div>
