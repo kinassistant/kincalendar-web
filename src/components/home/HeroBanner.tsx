@@ -55,7 +55,7 @@ const HeroBanner: React.FC = () => {
             }}
           />
         </div>
-        <div className="absolute top-[30px] left-1/2 -translate-x-1/2 w-[320px] h-[320px]">
+        <div className="absolute top-[30px] left-1/2 -translate-x-1/2">
           <Image
             src={mobileCard4x}
             alt="bannerCard"
