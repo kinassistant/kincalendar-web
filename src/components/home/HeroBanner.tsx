@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import BannerMobile from "../../assets/banner-mobile.webp";
 import heroBanner from "../../assets/hero-banner.png";
