@@ -4,7 +4,7 @@ import NavbarSm from "@/components/shared/NavbarSm";
 import type { Metadata } from "next";
 import "./globals.css";
 import ClientAnalytics from "@/components/shared/ClientAnalytics";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import Analytics from "@/components/shared/Analytics";
 import { Figtree } from "next/font/google";
 
 const figtree = Figtree({
@@ -93,12 +93,7 @@ export default function RootLayout({
     <html lang="en">
       <head></head>
       <body className={`${figtree.variable} relative`}>
-        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID &&
-          process.env.NODE_ENV === "production" && (
-            <GoogleAnalytics
-              gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}
-            />
-          )}
+        <Analytics />
         <div className="fixed top-6 left-0 right-0 z-50">
           <Navbar />
         </div>
