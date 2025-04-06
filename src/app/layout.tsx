@@ -91,7 +91,42 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <head></head>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  "@id": "https://www.kincalendar.com/#organization",
+                  name: "KIN: Shared Family Calendar App",
+                  url: "https://www.kincalendar.com",
+                  logo: {
+                    "@type": "ImageObject",
+                    url: "https://www.kincalendar.com/assets/kin-calendar-social.png",
+                  },
+                  sameAs: ["https://twitter.com/realsanketp"],
+                },
+                {
+                  "@type": "SoftwareApplication",
+                  name: "KIN: Shared Family Calendar App",
+                  applicationCategory: "LifestyleApplication",
+                  operatingSystem: "iOS",
+                  description:
+                    "KIN is a Voice-first AI-powered Calendar Assistant for busy families. KIN simplifies scheduling with smart reminders and seamless coordination.",
+                  offers: {
+                    "@type": "Offer",
+                    price: "0",
+                    priceCurrency: "USD",
+                  },
+                },
+              ],
+            }),
+          }}
+        />
+      </head>
       <body className={`${figtree.variable} relative`}>
         <Analytics />
         <div className="fixed top-6 left-0 right-0 z-50">
