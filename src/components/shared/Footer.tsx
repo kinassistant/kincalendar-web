@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mt-6 gap-6">
           <div className="flex items-center gap-3 order-2 md:order-1">
             <p className="font-medium">Made with love in Seattle </p>
-            <Flag code="US" width={24} height={24} />
+            <Flag code="US" width={24} height={24} alt="US Flag" />
           </div>
           <div className="flex items-center gap-4 order-1 md:order-2">
             {socialLinks.map((items, index) => (
