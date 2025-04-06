@@ -16,23 +16,23 @@ const HeroHeading: React.FC = () => {
     <div className="flex items-center justify-center">
       <div className="max-w-[678px] flex flex-col items-center">
         {/* Hidden h1 for SEO - only visible to screen readers */}
-        <h1 className="sr-only">The future of family scheduling</h1>
+        <h1 className="sr-only">The Delightful Shared Family Calendar App</h1>
 
         {/* Desktop View */}
         <div className="hidden md:block space-y-4">
           <div className="text-[64px] font-semibold leading-[64px] text-center">
-            <span className="block mb-4">The future of</span>
+            <span className="block mb-4">The Delightful</span>
             <div className="flex items-center gap-4">
-              <span>family</span>
+              <span>Family</span>
               <div className="relative">
                 <Image src={members} alt="members" />
                 <div className="absolute h-7 min-w-[119px] bottom-[-14px] left-1/2 transform -translate-x-1/2 px-2 rounded-lg bg-gradient-to-t to-[#FFFCF7] from-[#FFCE8F] border-[2px] border-white flex items-center justify-center">
                   <p className="text-primary_800 text-sm font-semibold whitespace-nowrap">
-                    Shared calendar
+                    Family Calendar
                   </p>
                 </div>
               </div>
-              <span>scheduling</span>
+              <span>Calendar</span>
             </div>
           </div>
         </div>
@@ -43,14 +43,14 @@ const HeroHeading: React.FC = () => {
             <Image src={members} alt="members" className="w-[120px] h-12" />
             <div className="absolute h-6 min-w-[97px] bottom-[-14px] left-1/2 transform -translate-x-1/2 px-1 rounded-lg bg-gradient-to-t to-[#FFFCF7] from-[#FFCE8F] border-[2px] border-white flex items-center justify-center">
               <p className="text-primary_800 text-xs font-semibold whitespace-nowrap">
-                Shared calendar
+                Family Calendar
               </p>
             </div>
           </div>
           <div className="mt-6">
             <div className="text-[32px] font-semibold leading-[32px] text-center">
-              <div>The future of</div>
-              <div>family scheduling</div>
+              <div>The Delightful</div>
+              <div>Family Calendar</div>
             </div>
           </div>
         </div>
