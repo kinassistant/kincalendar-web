@@ -14,9 +14,9 @@ const figtree = Figtree({
   weight: ["300", "400", "500", "600", "700", "800", "900"],
 });
 
-const title = "KIN: Family Calendar - AI-Powered Family Scheduling App";
+const title = "KIN: Shared Family Calendar App";
 const description =
-  "Streamline your family's schedule with KIN, the voice-first AI-powered family calendar app. Perfect for busy families, featuring smart scheduling, reminders, and seamless coordination.";
+  "KIN is a Voice-first AI-powered Calendar Assistant for busy families. KIN simplifies scheduling with smart reminders and seamless coordination.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.kincalendar.com"),
