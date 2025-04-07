@@ -4,7 +4,10 @@ import Image2 from "../../assets/Image-2.png";
 
 const StoryBehindKIN = () => {
   return (
-    <section className="bg-gradient-to-b from-white to-[#FFF0DF] pt-[60px] md:pt-[120px] text-center px-6 lg:px-0 overflow-hidden">
+    <section
+      id="story-behind-kin"
+      className="bg-gradient-to-b from-white to-[#FFF0DF] pt-[60px] md:pt-[120px] text-center px-6 lg:px-0 overflow-hidden"
+    >
       <div className="max-w-[792px] mx-auto md:space-y-10">
         <div className="max-w-[656px] mx-auto">
           <h2 className="text-2xl md:text-[32px] font-semibold text-[#020617] md:leading-10 mb-6 text-start md:text-center">
