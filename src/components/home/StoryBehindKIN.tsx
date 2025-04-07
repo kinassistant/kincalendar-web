@@ -16,11 +16,15 @@ const StoryBehindKIN = () => {
         // Use a longer delay for mobile webviews to ensure DOM is fully loaded
         setTimeout(() => {
           if (sectionRef.current) {
-            // Get the element's position relative to the viewport
-            const rect = sectionRef.current.getBoundingClientRect();
-            // Scroll to element with offset for headers
+            // For mobile webviews, scroll to position the section title at the top
+            const yOffset = -140; // Larger offset to account for iOS navigation bar
+            const y =
+              sectionRef.current.getBoundingClientRect().top +
+              window.scrollY +
+              yOffset;
+
             window.scrollTo({
-              top: window.scrollY + rect.top - 80, // 80px offset for headers
+              top: y,
               behavior: "smooth",
             });
           }
