@@ -105,7 +105,7 @@ export default function RootLayout({
                   url: "https://www.kincalendar.com",
                   logo: {
                     "@type": "ImageObject",
-                    url: "https://www.kincalendar.com/assets/kin-calendar-social.png",
+                    url: "https://www.kincalendar.com/assets/kin-logo.png",
                   },
                   sameAs: ["https://twitter.com/realsanketp"],
                 },
