@@ -1,11 +1,38 @@
+"use client";
+
 import Image from "next/image";
 import Image1 from "../../assets/Image-1.png";
 import Image2 from "../../assets/Image-2.png";
+import { useEffect, useRef } from "react";
 
 const StoryBehindKIN = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    // Handle hash navigation
+    if (typeof window !== "undefined") {
+      const hash = window.location.hash;
+      if (hash === "#story-behind-kin" && sectionRef.current) {
+        // Use a longer delay for mobile webviews to ensure DOM is fully loaded
+        setTimeout(() => {
+          if (sectionRef.current) {
+            // Get the element's position relative to the viewport
+            const rect = sectionRef.current.getBoundingClientRect();
+            // Scroll to element with offset for headers
+            window.scrollTo({
+              top: window.scrollY + rect.top - 80, // 80px offset for headers
+              behavior: "smooth",
+            });
+          }
+        }, 500);
+      }
+    }
+  }, []);
+
   return (
     <section
       id="story-behind-kin"
+      ref={sectionRef}
       className="bg-gradient-to-b from-white to-[#FFF0DF] pt-[60px] md:pt-[120px] text-center px-6 lg:px-0 overflow-hidden"
     >
       <div className="max-w-[792px] mx-auto md:space-y-10">
@@ -21,9 +48,9 @@ const StoryBehindKIN = () => {
           </p>
           <p className="text-[#020617] font-medium text-lg leading-6 mt-6 text-start md:text-center">
             KIN was born from that real-life frustration. Traditional calendars
-            were too tedious and a fridge calendar wasn’t available on the go.
-            My goal was to create an app that makes family scheduling simple and
-            accessible. Now, my wife and I can sync our schedules easily and
+            were too tedious and a fridge calendar wasn&apos;t available on the
+            go. My goal was to create an app that makes family scheduling simple
+            and accessible. Now, my wife and I can sync our schedules easily and
             finally keep our family schedule in one place.
           </p>
           <p className="mt-6 text-[#020617] font-medium text-lg leading-6 text-start md:text-center">
