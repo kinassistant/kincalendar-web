@@ -1,13 +1,16 @@
+import xIcon from "../assets/x.svg";
+/*
 import fIcon from "../assets/f.svg";
 import instagram from "../assets/instagram.svg";
-import xIcon from "../assets/x.svg";
+*/
 
 export const socialLinks = [
   {
-    href: "https://x.com/levelsio/status/1901963649930928177",
+    href: "https://x.com/realsanketp",
     icon: xIcon,
     alt: "xIcon",
   },
+  /*
   {
     href: "#",
     icon: fIcon,
@@ -18,4 +21,5 @@ export const socialLinks = [
     icon: instagram,
     alt: "instagram",
   },
+  */
 ];
